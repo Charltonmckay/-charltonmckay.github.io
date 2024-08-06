@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/Images/Grayback.gif');
+  background-size: cover;
+  background-position: center;
+  color: #020200;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+  background-color: #1d1c02;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #e1ac49;
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  color: #101211;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.anime-list, .fighter-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.anime-item, .fighter-item {
+  padding: 10px;
+  background-color: #bec2c6;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.anime-item:hover, .fighter-item:hover {
+  background-color: #e1ac49;
+}
+
+#click-me-button {
+  padding: 10px 20px;
+  background-color: #e1ac49;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#click-me-button:hover {
+  background-color: #d99636;
+}
+
+#fun-fact-display {
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.anime-item, .fighter-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.anime-item:hover, .fighter-item:hover {
+  transform: scale(1.05);
+}
+
+.anime-item img, .fighter-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.anime-list, .fighter-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+
+#bio {
+  padding: 20px;
+  border: 2px solid #e1ac49; 
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  text-align: center; 
+}
+
+#bio h1 {
+  color: #070e0b;
+  text-align: center;
+}
+
+#bio::before {
+  content: '';
+  background-image: url('/charltonmckay.github.io/Images/profile.jpg'); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+}
+
+#bio p {
+  line-height: 1.6;
+  color: #333;
+}
+
+#bio img.bio-photo {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 3px solid #e1ac49; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#bio img.bio-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
