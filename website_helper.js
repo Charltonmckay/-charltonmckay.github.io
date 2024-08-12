@@ -66,3 +66,40 @@ document.getElementById('click-me-button').addEventListener('click', () => {
   const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
   document.getElementById('fun-fact-display').innerText = randomFact;
 });
+
+
+const skillDescriptions = {
+  js: "JavaScript is a versatile, high-level programming language used for creating interactive web pages. [Popular Uses: Web Development, Server-side Development]",
+  python: "Python is a high-level, interpreted programming language known for its readability and wide range of applications. [Popular Uses: Data Science, Web Development, Automation]",
+  html: "HTML (HyperText Markup Language) is the standard language for creating web pages. [Popular Uses: Web Development]",
+  css: "CSS (Cascading Style Sheets) is used for describing the presentation of a document written in HTML or XML. [Popular Uses: Web Design, Layout]",
+  sql: "SQL (Structured Query Language) is used for managing and manipulating relational databases. [Popular Uses: Database Management, Data Analysis]"
+};
+
+document.querySelectorAll('.skill-item').forEach(item => {
+  item.addEventListener('click', () => {
+      alert(skillDescriptions[item.id]);
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const scrollToTopBtn = document.getElementById('scroll-to-top');
+  if (window.scrollY > 300) {
+      scrollToTopBtn.style.display = 'block';
+  } else {
+      scrollToTopBtn.style.display = 'none';
+  }
+});
+
+document.getElementById('scroll-to-top').addEventListener('click', () => {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
+
+
+
+
+
+
