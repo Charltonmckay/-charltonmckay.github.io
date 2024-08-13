@@ -29,11 +29,12 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
 .navigation li {
-  display: inline;
+  margin: 5px 10px;
 }
 
 .navigation a {
@@ -266,11 +267,26 @@ section {
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
-  display: none; /* Initially hidden */
+  display: none; 
 }
 
 #scroll-to-top:hover {
   background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .navigation ul {
+    justify-content: center;
+  }
+
+  .navigation li {
+    margin: 5px;
+  }
 }
 
 
